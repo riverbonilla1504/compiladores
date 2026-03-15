@@ -1,4 +1,4 @@
-# Generated from Calculadora.g4 by ANTLR 4.13.1
+# Generated from Calculadora.g4 by ANTLR 4.13.2
 from antlr4 import *
 if "." in __name__:
     from .CalculadoraParser import CalculadoraParser
@@ -17,39 +17,30 @@ class CalculadoraListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CalculadoraParser#Numero.
-    def enterNumero(self, ctx:CalculadoraParser.NumeroContext):
+    # Enter a parse tree produced by CalculadoraParser#expresion.
+    def enterExpresion(self, ctx:CalculadoraParser.ExpresionContext):
         pass
 
-    # Exit a parse tree produced by CalculadoraParser#Numero.
-    def exitNumero(self, ctx:CalculadoraParser.NumeroContext):
-        pass
-
-
-    # Enter a parse tree produced by CalculadoraParser#AddSub.
-    def enterAddSub(self, ctx:CalculadoraParser.AddSubContext):
-        pass
-
-    # Exit a parse tree produced by CalculadoraParser#AddSub.
-    def exitAddSub(self, ctx:CalculadoraParser.AddSubContext):
+    # Exit a parse tree produced by CalculadoraParser#expresion.
+    def exitExpresion(self, ctx:CalculadoraParser.ExpresionContext):
         pass
 
 
-    # Enter a parse tree produced by CalculadoraParser#Parentesis.
-    def enterParentesis(self, ctx:CalculadoraParser.ParentesisContext):
+    # Enter a parse tree produced by CalculadoraParser#termino.
+    def enterTermino(self, ctx:CalculadoraParser.TerminoContext):
         pass
 
-    # Exit a parse tree produced by CalculadoraParser#Parentesis.
-    def exitParentesis(self, ctx:CalculadoraParser.ParentesisContext):
+    # Exit a parse tree produced by CalculadoraParser#termino.
+    def exitTermino(self, ctx:CalculadoraParser.TerminoContext):
         pass
 
 
-    # Enter a parse tree produced by CalculadoraParser#MultDiv.
-    def enterMultDiv(self, ctx:CalculadoraParser.MultDivContext):
+    # Enter a parse tree produced by CalculadoraParser#factor.
+    def enterFactor(self, ctx:CalculadoraParser.FactorContext):
         pass
 
-    # Exit a parse tree produced by CalculadoraParser#MultDiv.
-    def exitMultDiv(self, ctx:CalculadoraParser.MultDivContext):
+    # Exit a parse tree produced by CalculadoraParser#factor.
+    def exitFactor(self, ctx:CalculadoraParser.FactorContext):
         pass
 
 

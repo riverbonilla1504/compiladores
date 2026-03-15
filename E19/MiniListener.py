@@ -1,4 +1,4 @@
-# Generated from Mini.g4 by ANTLR 4.13.1
+# Generated from Mini.g4 by ANTLR 4.13.2
 from antlr4 import *
 if "." in __name__:
     from .MiniParser import MiniParser
@@ -32,6 +32,15 @@ class MiniListener(ParseTreeListener):
 
     # Exit a parse tree produced by MiniParser#expr.
     def exitExpr(self, ctx:MiniParser.ExprContext):
+        pass
+
+
+    # Enter a parse tree produced by MiniParser#atom.
+    def enterAtom(self, ctx:MiniParser.AtomContext):
+        pass
+
+    # Exit a parse tree produced by MiniParser#atom.
+    def exitAtom(self, ctx:MiniParser.AtomContext):
         pass
 
 
