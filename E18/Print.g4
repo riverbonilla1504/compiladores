@@ -2,8 +2,9 @@ grammar Print;
 
 stat: 'print' expr ;
 
-expr: expr '+' expr
-    | ID
+expr: atom ('+' atom)* ;
+
+atom: ID
     | NUM
     ;
 

@@ -1,4 +1,4 @@
-# Generated from Expr2.g4 by ANTLR 4.13.1
+# Generated from Expr2.g4 by ANTLR 4.13.2
 from antlr4 import *
 if "." in __name__:
     from .Expr2Parser import Expr2Parser
@@ -14,6 +14,24 @@ class Expr2Listener(ParseTreeListener):
 
     # Exit a parse tree produced by Expr2Parser#expr.
     def exitExpr(self, ctx:Expr2Parser.ExprContext):
+        pass
+
+
+    # Enter a parse tree produced by Expr2Parser#sumExpr.
+    def enterSumExpr(self, ctx:Expr2Parser.SumExprContext):
+        pass
+
+    # Exit a parse tree produced by Expr2Parser#sumExpr.
+    def exitSumExpr(self, ctx:Expr2Parser.SumExprContext):
+        pass
+
+
+    # Enter a parse tree produced by Expr2Parser#atom.
+    def enterAtom(self, ctx:Expr2Parser.AtomContext):
+        pass
+
+    # Exit a parse tree produced by Expr2Parser#atom.
+    def exitAtom(self, ctx:Expr2Parser.AtomContext):
         pass
 
 
