@@ -1,7 +1,8 @@
 grammar VarExpr;
 
-expr: expr '+' expr
-    | ID
+expr: atom ('+' atom)* ;
+
+atom: ID
     | NUM
     ;
 

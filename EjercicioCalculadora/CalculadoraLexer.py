@@ -1,4 +1,4 @@
-# Generated from Calculadora.g4 by ANTLR 4.13.1
+# Generated from Calculadora.g4 by ANTLR 4.13.2
 from antlr4 import *
 from io import StringIO
 import sys
@@ -18,8 +18,8 @@ def serializedATN():
         0,0,0,3,1,0,0,0,0,5,1,0,0,0,0,7,1,0,0,0,0,9,1,0,0,0,0,11,1,0,0,0,
         0,13,1,0,0,0,0,15,1,0,0,0,1,17,1,0,0,0,3,19,1,0,0,0,5,21,1,0,0,0,
         7,23,1,0,0,0,9,25,1,0,0,0,11,27,1,0,0,0,13,30,1,0,0,0,15,43,1,0,
-        0,0,17,18,5,42,0,0,18,2,1,0,0,0,19,20,5,47,0,0,20,4,1,0,0,0,21,22,
-        5,43,0,0,22,6,1,0,0,0,23,24,5,45,0,0,24,8,1,0,0,0,25,26,5,40,0,0,
+        0,0,17,18,5,43,0,0,18,2,1,0,0,0,19,20,5,45,0,0,20,4,1,0,0,0,21,22,
+        5,42,0,0,22,6,1,0,0,0,23,24,5,47,0,0,24,8,1,0,0,0,25,26,5,40,0,0,
         26,10,1,0,0,0,27,28,5,41,0,0,28,12,1,0,0,0,29,31,7,0,0,0,30,29,1,
         0,0,0,31,32,1,0,0,0,32,30,1,0,0,0,32,33,1,0,0,0,33,40,1,0,0,0,34,
         36,5,46,0,0,35,37,7,0,0,0,36,35,1,0,0,0,37,38,1,0,0,0,38,36,1,0,
@@ -49,7 +49,7 @@ class CalculadoraLexer(Lexer):
     modeNames = [ "DEFAULT_MODE" ]
 
     literalNames = [ "<INVALID>",
-            "'*'", "'/'", "'+'", "'-'", "'('", "')'" ]
+            "'+'", "'-'", "'*'", "'/'", "'('", "')'" ]
 
     symbolicNames = [ "<INVALID>",
             "NUMBER", "WS" ]
@@ -61,7 +61,7 @@ class CalculadoraLexer(Lexer):
 
     def __init__(self, input=None, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.13.1")
+        self.checkVersion("4.13.2")
         self._interp = LexerATNSimulator(self, self.atn, self.decisionsToDFA, PredictionContextCache())
         self._actions = None
         self._predicates = None

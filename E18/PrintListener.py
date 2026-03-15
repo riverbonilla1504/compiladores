@@ -1,4 +1,4 @@
-# Generated from Print.g4 by ANTLR 4.13.1
+# Generated from Print.g4 by ANTLR 4.13.2
 from antlr4 import *
 if "." in __name__:
     from .PrintParser import PrintParser
@@ -23,6 +23,15 @@ class PrintListener(ParseTreeListener):
 
     # Exit a parse tree produced by PrintParser#expr.
     def exitExpr(self, ctx:PrintParser.ExprContext):
+        pass
+
+
+    # Enter a parse tree produced by PrintParser#atom.
+    def enterAtom(self, ctx:PrintParser.AtomContext):
+        pass
+
+    # Exit a parse tree produced by PrintParser#atom.
+    def exitAtom(self, ctx:PrintParser.AtomContext):
         pass
 
 

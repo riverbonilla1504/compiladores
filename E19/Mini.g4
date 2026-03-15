@@ -7,9 +7,10 @@ stat
     | 'print' expr
     ;
 
-expr
-    : expr '+' expr
-    | NUM
+expr: atom ('+' atom)* ;
+
+atom
+    : NUM
     | ID
     ;
 

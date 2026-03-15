@@ -1,4 +1,4 @@
-# Generated from VarExpr.g4 by ANTLR 4.13.1
+# Generated from VarExpr.g4 by ANTLR 4.13.2
 from antlr4 import *
 if "." in __name__:
     from .VarExprParser import VarExprParser
@@ -14,6 +14,15 @@ class VarExprListener(ParseTreeListener):
 
     # Exit a parse tree produced by VarExprParser#expr.
     def exitExpr(self, ctx:VarExprParser.ExprContext):
+        pass
+
+
+    # Enter a parse tree produced by VarExprParser#atom.
+    def enterAtom(self, ctx:VarExprParser.AtomContext):
+        pass
+
+    # Exit a parse tree produced by VarExprParser#atom.
+    def exitAtom(self, ctx:VarExprParser.AtomContext):
         pass
 
 
